@@ -1,71 +1,110 @@
-<<<<<<< HEAD
-🎵 Prediksi Emosi Musik Menggunakan CNN + LSTM
-Aplikasi berbasis Streamlit untuk memprediksi emosi pada musik menggunakan model CNN + LSTM, berdasarkan representasi Mel-Spectrogram dari audio.
+# 🎵 Music Emotion Recognition (CNN + LSTM)
 
-📌 Fitur Utama
-🎧 Input file audio MP3 atau link YouTube
+Aplikasi berbasis **Streamlit** untuk memprediksi emosi dari musik menggunakan **Deep Learning (CNN + LSTM)** berdasarkan representasi **Mel-Spectrogram**.
 
-🎼 Konversi audio menjadi Mel-Spectrogram
+---
 
-🤖 Prediksi emosi musik berdasarkan kuadran Arousal-Valence
+## 🚀 Demo Fitur
 
-📊 Visualisasi hasil prediksi emosi dalam bentuk grafik
+✨ Aplikasi ini mampu:
+- 🎧 Upload file **MP3** atau input **link YouTube**
+- 🎼 Mengubah audio menjadi **Mel-Spectrogram**
+- 🤖 Memprediksi emosi musik berdasarkan model **CNN + LSTM**
+- 📊 Visualisasi distribusi emosi (interactive chart)
+- 🎯 Interpretasi emosi **adaptif & human-readable**
+- 🎭 Analisis tambahan:
+  - Music Personality
+  - Rekomendasi aktivitas
+  - Mood Meter (Valence & Arousal)
 
-📂 Struktur Proyek
-prediksi_emosi/
-├── venv/                   # Virtual environment (tidak perlu diunggah ke GitHub)
-├── streamlit_app.py        # Script utama Streamlit
-├── utils.py                # Fungsi bantu: ekstraksi audio, prediksi, dll
-├── best_model.h5           # Model CNN + LSTM hasil pelatihan
-├── requirements.txt        # Daftar dependensi
-└── README.md               # Dokumentasi proyek
+---
 
-🚀 Cara Menjalankan Aplikasi
-1. Clone Repo dan Masuk ke Folder Proyek
-git clone https://github.com/namakamu/prediksi_emosi.git
-cd prediksi_emosi
+## 🧠 Konsep Utama
 
-2. Buat dan Aktifkan Virtual Environment
-# Buat venv
-python -m venv venv
+Model menggunakan pendekatan **Arousal - Valence Model**:
 
-# Aktifkan (Windows)
-venv\Scripts\activate
+| Kuadran | Emosi |
+|--------|------|
+| Q1 | Happy / Excited |
+| Q2 | Angry / Nervous |
+| Q3 | Sad / Bored |
+| Q4 | Calm / Relaxed |
 
-# Aktifkan (Mac/Linux)
-source venv/bin/activate
+---
 
-3. Install Dependensi
-pip install -r requirements.txt
+## 🧬 Arsitektur Model
 
-4. Jalankan Aplikasi Streamlit
-streamlit run streamlit_app.py
+- **CNN (Convolutional Neural Network)**  
+  → Ekstraksi pola dari Mel-Spectrogram  
 
-🧠 Tentang Model
-Model yang digunakan adalah kombinasi Convolutional Neural Network (CNN) dan Long Short-Term Memory (LSTM) untuk memproses fitur audio berbentuk Mel-Spectrogram. Output model berupa probabilitas dari 4 kuadran emosi:
-| Kuadran | Emosi Utama             |
-| ------- | ----------------------- |
-| Q1      | Excited, Happy, Pleased |
-| Q2      | Angry, Nervous, Annoyed |
-| Q3      | Sad, Bored, Sleepy      |
-| Q4      | Calm, Peaceful, Relaxed |
+- **LSTM (Long Short-Term Memory)**  
+  → Menangkap dinamika temporal dari audio  
 
-📚 Dataset
-Dataset utama: DEAM (Database for Emotional Analysis in Music)
-Sumber: http://cvml.unige.ch/databases/DEAM/
+- Output: probabilitas 4 kelas emosi
 
-🛠 Teknologi
-- Python 3.8+
+---
+
+## 📊 Dataset
+
+- **DEAM (Database for Emotional Analysis in Music)**
+- 1800+ lagu (45 detik)
+- Label berdasarkan:
+  - **Valence (positivity)**
+  - **Arousal (energy)**
+
+🔗 http://cvml.unige.ch/databases/DEAM/
+
+---
+
+## 🖥️ Tech Stack
+
+- Python
 - Streamlit
 - TensorFlow / Keras
 - Librosa
-- Pytube
-- Matplotlib
+- Plotly
+- yt-dlp
 
-📧 Kontak
-Dibuat oleh Bryan Nathaniel
-📬 Email: bryan.nathaniel73@gmail.com
-🌐 GitHub: github.com/brynathn
-=======
-# music_emotion
->>>>>>> ab5b74c425feac110cebde5e52cd1152538023a0
+---
+
+## ⚙️ Cara Menjalankan
+
+### 1. Clone repo
+git clone https://github.com/brynathn/music_emotion.git
+cd music_emotion
+
+### 2. Buat virtual environment
+Buat virtual environment
+
+### 3. Aktifkan venv
+Windows
+venv\Scripts\activate
+
+Mac/Linux
+source venv/bin/activate
+
+### 4. Install dependencies
+pip install -r requirements.txt
+
+### 5. Run app
+streamlit run streamlit_app.py
+
+📈 Contoh Insight yang Dihasilkan
+🎯 Emosi Dominan
+🔥 Kombinasi emosi (misal: Happy + Calm)
+🎭 Music Personality (Energetic, Reflective, dll)
+🎯 Rekomendasi aktivitas (Gym, Study, Relax)
+🎚️ Mood Meter:
+    - Valence (positivity)
+    - Arousal (energy)
+    
+⚠️ Catatan
+File model (.keras) bisa besar → gunakan Git LFS jika perlu
+Audio YouTube membutuhkan koneksi internet
+Minimal durasi audio: 30 detik
+
+👨‍💻 Author
+Bryan Nathaniel
+🎓 Universitas Bunda Mulia
+📧 Email: bryan.nathaniel73@gmail.com
+🌐 GitHub: https://github.com/brynathn
