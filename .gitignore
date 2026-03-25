@@ -7,19 +7,3 @@ __pycache__/
 # Virtual env
 venv/
 .env/
-
-# Streamlit
-.streamlit/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Model & data (optional, kalau besar)
-*.h5
-*.keras
-*.pt
-downloads/
-
-# temp files
-*.tmp
