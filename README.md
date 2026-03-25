@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 🎵 Prediksi Emosi Musik Menggunakan CNN + LSTM
 Aplikasi berbasis Streamlit untuk memprediksi emosi pada musik menggunakan model CNN + LSTM, berdasarkan representasi Mel-Spectrogram dari audio.
 
@@ -65,3 +66,6 @@ Sumber: http://cvml.unige.ch/databases/DEAM/
 Dibuat oleh Bryan Nathaniel
 📬 Email: bryan.nathaniel73@gmail.com
 🌐 GitHub: github.com/brynathn
+=======
+# music_emotion
+>>>>>>> ab5b74c425feac110cebde5e52cd1152538023a0
