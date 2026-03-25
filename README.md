@@ -103,6 +103,19 @@ File model (.keras) bisa besar → gunakan Git LFS jika perlu
 Audio YouTube membutuhkan koneksi internet
 Minimal durasi audio: 30 detik
 
+
+## 📊 Result
+<img width="1496" height="906" alt="image" src="https://github.com/user-attachments/assets/8c2d8d91-33c2-452e-8499-8b425a9641ae" />
+
+<img width="1496" height="641" alt="image" src="https://github.com/user-attachments/assets/5673e21c-57c8-4cab-b322-4d92a8fe923f" />
+
+<img width="1495" height="816" alt="image" src="https://github.com/user-attachments/assets/7c1c4e83-5521-4371-9ca6-e6aab8dd72e1" />
+
+<img width="1492" height="739" alt="image" src="https://github.com/user-attachments/assets/196575ae-f9a0-42f2-a7d9-c743cbd1c0ef" />
+
+<img width="1483" height="858" alt="image" src="https://github.com/user-attachments/assets/764f064d-b02d-4e9b-8492-c0550eebd7fb" />
+
+
 👨‍💻 Author
 Bryan Nathaniel
 🎓 Universitas Bunda Mulia
